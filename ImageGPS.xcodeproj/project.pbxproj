@@ -21,6 +21,10 @@
 		3D44E8E519085F96008B2570 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D44E8C719085F96008B2570 /* UIKit.framework */; };
 		3D44E8ED19085F96008B2570 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D44E8EB19085F96008B2570 /* InfoPlist.strings */; };
 		3D44E8EF19085F96008B2570 /* ImageGPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44E8EE19085F96008B2570 /* ImageGPSTests.m */; };
+		3D44E91419087AB2008B2570 /* libiphone-exif-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D44E91319087AB2008B2570 /* libiphone-exif-universal.a */; };
+		3D44E91719099110008B2570 /* NSMutableDictionary+ImageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44E91619099110008B2570 /* NSMutableDictionary+ImageMetadata.m */; };
+		3D44E9191909B0C3008B2570 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D44E9181909B0C3008B2570 /* AssetsLibrary.framework */; };
+		3D44E91C1909D970008B2570 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D44E91B1909D970008B2570 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		3D44E8EA19085F96008B2570 /* ImageGPSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageGPSTests-Info.plist"; sourceTree = "<group>"; };
 		3D44E8EC19085F96008B2570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D44E8EE19085F96008B2570 /* ImageGPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGPSTests.m; sourceTree = "<group>"; };
+		3D44E91319087AB2008B2570 /* libiphone-exif-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libiphone-exif-universal.a"; sourceTree = "<group>"; };
+		3D44E91519099110008B2570 /* NSMutableDictionary+ImageMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+ImageMetadata.h"; path = "local/NSMutableDictionary+ImageMetadata.h"; sourceTree = "<group>"; };
+		3D44E91619099110008B2570 /* NSMutableDictionary+ImageMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+ImageMetadata.m"; path = "local/NSMutableDictionary+ImageMetadata.m"; sourceTree = "<group>"; };
+		3D44E9181909B0C3008B2570 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3D44E91A1909D970008B2570 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3D44E91B1909D970008B2570 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D44E9191909B0C3008B2570 /* AssetsLibrary.framework in Frameworks */,
 				3D44E8C619085F96008B2570 /* CoreGraphics.framework in Frameworks */,
 				3D44E8C819085F96008B2570 /* UIKit.framework in Frameworks */,
+				3D44E91419087AB2008B2570 /* libiphone-exif-universal.a in Frameworks */,
 				3D44E8C419085F96008B2570 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +94,7 @@
 		3D44E8B719085F96008B2570 = {
 			isa = PBXGroup;
 			children = (
+				3D44E91319087AB2008B2570 /* libiphone-exif-universal.a */,
 				3D44E8C919085F96008B2570 /* ImageGPS */,
 				3D44E8E819085F96008B2570 /* ImageGPSTests */,
 				3D44E8C219085F96008B2570 /* Frameworks */,
@@ -101,6 +114,7 @@
 		3D44E8C219085F96008B2570 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D44E9181909B0C3008B2570 /* AssetsLibrary.framework */,
 				3D44E8C319085F96008B2570 /* Foundation.framework */,
 				3D44E8C519085F96008B2570 /* CoreGraphics.framework */,
 				3D44E8C719085F96008B2570 /* UIKit.framework */,
@@ -112,11 +126,15 @@
 		3D44E8C919085F96008B2570 /* ImageGPS */ = {
 			isa = PBXGroup;
 			children = (
+				3D44E91519099110008B2570 /* NSMutableDictionary+ImageMetadata.h */,
+				3D44E91619099110008B2570 /* NSMutableDictionary+ImageMetadata.m */,
 				3D44E8D219085F96008B2570 /* DHAppDelegate.h */,
 				3D44E8D319085F96008B2570 /* DHAppDelegate.m */,
 				3D44E8D519085F96008B2570 /* Main.storyboard */,
 				3D44E8D819085F96008B2570 /* DHViewController.h */,
 				3D44E8D919085F96008B2570 /* DHViewController.m */,
+				3D44E91A1909D970008B2570 /* Reachability.h */,
+				3D44E91B1909D970008B2570 /* Reachability.m */,
 				3D44E8DB19085F96008B2570 /* Images.xcassets */,
 				3D44E8CA19085F96008B2570 /* Supporting Files */,
 			);
@@ -252,7 +270,9 @@
 			files = (
 				3D44E8D419085F96008B2570 /* DHAppDelegate.m in Sources */,
 				3D44E8DA19085F96008B2570 /* DHViewController.m in Sources */,
+				3D44E91719099110008B2570 /* NSMutableDictionary+ImageMetadata.m in Sources */,
 				3D44E8D019085F96008B2570 /* main.m in Sources */,
+				3D44E91C1909D970008B2570 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,12 +395,22 @@
 		3D44E8F319085F96008B2570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageGPS/ImageGPS-Prefix.pch";
 				INFOPLIST_FILE = "ImageGPS/ImageGPS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ImageGPS",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,12 +418,22 @@
 		3D44E8F419085F96008B2570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageGPS/ImageGPS-Prefix.pch";
 				INFOPLIST_FILE = "ImageGPS/ImageGPS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ImageGPS",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +497,7 @@
 				3D44E8F419085F96008B2570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D44E8F519085F96008B2570 /* Build configuration list for PBXNativeTarget "ImageGPSTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +506,7 @@
 				3D44E8F719085F96008B2570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DHViewController : UIViewController
-
+@interface DHViewController : UIViewController<UIImagePickerControllerDelegate,UIWebViewDelegate>{
+    UIImagePickerController *imgPicker;
+}
+- (IBAction)PickImage:(id)sender;
+@property (nonatomic, retain) UIImagePickerController *imgPicker;
+@property (weak, nonatomic) IBOutlet UIWebView *siteView;
+@property (weak, nonatomic) IBOutlet UIView *loadingView;
 @end
